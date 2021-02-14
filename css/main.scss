@@ -1,3 +1,25 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Volkhov', serif;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 body {
     background: whitesmoke;
+}
+
+.structure {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
