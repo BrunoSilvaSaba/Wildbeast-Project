@@ -17,6 +17,8 @@ a {
 
 img {
   max-width: 100%;
+  display: block;
+  border-radius: 05px;
 }
 
 body {
@@ -82,18 +84,53 @@ header nav a:hover {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: sidenav;
+  background: #fafbfc;
+  padding: 30px;
+}
+
+.sidenav li a {
+  display: block;
+  min-width: 60px;
+  max-width: 100px;
+  margin: 0 auto 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 05px;
+  -webkit-box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+          box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  -webkit-transition: 1.0s ease-out;
+  transition: 1.0s ease-out;
+}
+
+.sidenav li a:hover {
+  background: #b07dfb;
 }
 
 .content {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: content;
+  max-width: 900px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 .ads {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: ads;
+  background: #fafbfc;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  padding: 30px;
+  gap: 30px;
 }
 
 footer {
@@ -101,5 +138,12 @@ footer {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: footer;
+  background: linear-gradient(135deg, #8844ee, #807dfb);
+}
+
+footer h2 {
+  color: #fff;
+  text-align: center;
+  padding: 30px;
 }
 /*# sourceMappingURL=main.css.map */

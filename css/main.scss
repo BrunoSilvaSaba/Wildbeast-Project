@@ -1,4 +1,7 @@
 
+$background-sidenavs: #fafbfc;
+$background-main: linear-gradient(135deg, #8844ee, #807dfb);
+
 * {
     padding: 0;
     margin: 0;
@@ -17,6 +20,8 @@ a {
 
 img {
     max-width: 100%;
+    display: block;
+    border-radius: 05px;
 }
 
 body {
@@ -34,7 +39,7 @@ body {
 
 header {
     grid-area: header;
-    background: linear-gradient(135deg, #8844ee, #807dfb);
+    background: $background-main;
     padding: 30px;
     display: grid;
     grid-template-columns: 1fr auto;
@@ -69,18 +74,63 @@ header nav a:hover {
     max-width: 200px;
 }
 
+//=============================//
+
 .sidenav {
     grid-area: sidenav;
+    background: $background-sidenavs;
+    padding: 30px;
 }
 
+.sidenav li a {
+    display: block;
+    min-width: 60px;
+    max-width: 100px;
+    margin: 0 auto 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 05px;
+    box-shadow: 05px 05px 15px 00px rgba(44, 44, 44, 0.15);
+    transition: 1.0s ease-out;
+
+}
+
+.sidenav li a:hover {
+    background: #b07dfb;
+}
+
+//==================================================//
 .content {
     grid-area: content;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 30px;
 }
+
+//=================================================//
 
 .ads {
     grid-area: ads;
+    background: $background-sidenavs;
+    display: grid;
+    align-content: start;
+    padding: 30px;
+    gap: 30px;
+
 }
+
+//================================================//
 
 footer {
     grid-area: footer;
+    background: $background-main;
+}
+
+footer h2 {
+    color: #fff;
+    text-align: center;
+    padding: 30px;
 }
