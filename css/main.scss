@@ -223,6 +223,7 @@ p {
 .ads {
     grid-area: ads;
     background: $background-sidenavs;
+    grid-column: 1 / -1;
     display: grid;
     align-content: start;
     padding: 30px;
